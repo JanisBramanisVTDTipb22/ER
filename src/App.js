@@ -10,7 +10,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>hello</p>
         <Slide1 />
         <Slide2 />
         <Slide3 />

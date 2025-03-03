@@ -1,9 +1,9 @@
 function Slide2() {
     return (
-      <article className="Slide">
-        <header>
-          <p>kad to izmanto?</p>
-        </header>
+      <article>
+        <h1>2. Kad to izmanto?</h1>
+
+        <p>Tās visbiežāk izmanto, lai izstrādātu vai atkļūdotu relāciju datu bāzes programmatūras inženierijas, biznesa informācijas sistēmu, izglītības un pētniecības jomās.</p>
       </article>
     );
   }
