@@ -1,121 +1,40 @@
-/* General Body and Background Style for Dark Mode */
-body {
-    background-color: #2c3e50; /* Dark background for the entire page */
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Prevent page scrolling */
-    color: #ecf0f1; /* Light text color for dark mode */
-  }
-  
-  /* Full-page container */
-  .full-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    overflow: auto; /* Allow scrolling */
-    border: 8px solid #34495e; /* Dark border color */
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
-    background-color: #34495e; /* Dark background for the slide */
-    padding: 20px;
-    box-sizing: border-box;
-    transition: transform 0.3s ease; /* Smooth transform on hover */
-  }
-  
-  /* Hover effect on the full-page slide */
-  .full-page:hover {
-    transform: translateY(-10px); /* Slight lift effect */
-  }
-  
-  /* Slide Content Styles */
-  .Slide {
-    width: 100%;
-    max-width: 1000px; /* Max width for the content */
-    padding: 30px;
-    text-align: center;
-  }
-  
-  /* Header Styles */
-  header h2 {
-    font-size: 3rem; /* Larger title */
-    color: #ecf0f1; /* Light text for the header */
-    margin-bottom: 30px;
-    font-weight: bold;
-    text-transform: uppercase; /* Uppercase for emphasis */
-  }
-  
-  /* Section Styles */
-  section {
-    margin-bottom: 30px;
-  }
-  
-  section p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #bdc3c7; /* Light gray text for the body */
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  section p strong {
-    font-weight: bold;
-    color: #e67e22; /* Highlighted entity color (bright orange) */
-  }
-  
-  /* Diagram Section */
-  .diagram {
-    margin-top: 40px;
-  }
-  
-  .diagram h3 {
-    font-size: 2rem;
-    color: #ecf0f1;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  .diagram img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid #7f8c8d; /* Subtle border for the image */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Strong shadow for depth */
-    transition: transform 0.3s ease;
-  }
-  
-  .diagram img:hover {
-    transform: scale(1.05); /* Zoom effect on hover */
-  }
-  
-  .diagram svg {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid #7f8c8d;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease;
-  }
-  
-  .diagram svg:hover {
-    transform: scale(1.05); /* Zoom effect on hover */
-  }
-  
-  /* Footer section */
-  footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 1rem;
-    color: #bdc3c7; /* Light gray footer text */
-  }
-  
-  footer p {
-    margin: 5px;
-  }
-  
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure full height and no overflow */
+body, html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Enable smooth vertical scrolling */
+main.slides-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/* Each slide fills the screen and snaps into place */
+section.slide {
+  height: 100vh;
+  display: flex;
+  align-items: flex;
+  justify-content: center;
+  font-size: 2em;
+  scroll-snap-align: start;
+}
+
+/* Background colors for different slides */
+.slide:nth-child(1) { background-color: white; }
+.slide:nth-child(2) { background-color: gainsboro; }
+.slide:nth-child(3) { background-color: antiquewhite; }
+.slide:nth-child(4) { background-color: beige; }
+.slide:nth-child(5) { background-color: blanchedalmond; }
+.slide:nth-child(6) { background-color: darkgray; }
+
+header {
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,12 +1,10 @@
 function Slide4() {
     return (
-      <article className="Slide">
-        <header>
-          <p>kāds ir piemērs ar skaidrojumu?</p>
-        </header>
+      <article>
+        <header>Kāds ir piemērs ar skaidrojumu?</header>
       </article>
     );
   }
   
-  export default Slide4;
+export default Slide4;
   

@@ -1,7 +1,7 @@
 function Slide1() {
     return (
       <article>
-          <h1>1. kas tā ir un vai tā ir struktūras vai uzvedības modeļa daļa?</h1>
+          <header>Kas tā ir un vai tā ir struktūras vai uzvedības modeļa daļa?</header>
 
           <ul>
             <li>ER diagramma ir blokshēmas veids, kas ilustrē to, kā cilvēki, objekti vai jēdzieni, ir savstarpēji saistīti sistēmā.</li>

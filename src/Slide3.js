@@ -1,12 +1,10 @@
 function Slide3() {
     return (
-      <article className="Slide">
-        <header>
-          <p>kādi UML elementi ir šajā diagrammā?</p>
-        </header>
+      <article>
+        <header>Kādi UML elementi ir šajā diagrammā?</header>
       </article>
     );
   }
   
-  export default Slide3;
+export default Slide3;
   
