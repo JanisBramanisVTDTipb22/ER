@@ -14,6 +14,11 @@ function Slide3() {
         <li>Use-case aktieri</li>
         <li>Pārejas un stāvokļi</li>
       </ul>
+      <img 
+        src="https://www.visual-paradigm.com/VPGallery/img/datamodeling/EntityRelationshipDiagram/Entity-Relationship-Diagram-Sample.png" 
+        alt="Entity Relationship Diagram Sample" 
+        style={{ maxWidth: "100%", height: "auto", marginTop: "10px" }} 
+      />
       </article>
     );
   }
