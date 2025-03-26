@@ -15,7 +15,6 @@ function Slide5() {
         </p>
 
         <h1>ER Diagramma</h1>
-        {/*<img src="path_to_your_diagram.png" alt="Bloga ER Diagramma" width="100%" />*/}
     </article>
   );
 }
